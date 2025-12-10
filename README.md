@@ -15,8 +15,8 @@ Requirements
 - No external packages required (uses the standard `sqlite3` module)
 
 Quick start
-1. Place or create `books.db` in the repository root, or update `DB_PATH` in `3.py`.
-2. Run the script: `python3 3.py` to list records and perform example inserts.
+1. Place or create `books.db` in the repository root, or update `DB_PATH` in `online_library.py`.
+2. Run the script: `python3 online_library.py` to list records and perform example inserts.
 
 Notes and safety
 - The code uses parameterized queries and context managers for safer DB access.
