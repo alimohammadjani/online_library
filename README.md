@@ -1,4 +1,4 @@
-# Simple SQLite Data Adapters
+# Online library
 
 This repository contains a small Python module that implements lightweight data adapter classes
 for working with an SQLite database (`books.db`). The code provides simple ORM-like classes

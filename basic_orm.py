@@ -215,9 +215,9 @@ class PublishersDataAdapter:
     def delete (id:int):
         with sqlite3.connect(DB_PATH) as cn:
             cur = cn.cursor()
-            ref = cur.execute("SELECT 1 FROM books WHERE publisher = ? LIMIT 1", (id,)).fetchone()
+            ref = cur.execute("SELECT publisher_id FROM books")
             if ref is None:
-                cur.execute("DELETE FROM publishers WHERE id = ?", (id,))
+                cur.execute(f"DELETE FROM publishers where id={id}")
                 cn.commit()
                 return True
             return False
